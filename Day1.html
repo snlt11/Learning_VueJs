@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VueJs</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+
+<body>
+    <h2>{{type}}</h2>
+    <h2>{{brand}}</h2>
+    <h2>Age{{age}}</h2>
+    <button v-on:click="IncreaseAge(22)">Age</button>
+    <h2>Number{{number}}</h2>
+    <button @click="number++">Num</button>
+    <h2>Author Name : {{name}}</h2>
+    <button @click="name='testing'">change Name</button>
+
+    <div v-if="showBook">
+        <p>Book Name : {{name}}</p>
+        <p>Book Type : {{type}}</p>
+        <p>Book Brand : {{brand}}</p>
+    </div>
+    <button @click="showBook= !showBook">
+        <span v-if="!showBook">Show</span>
+        <span v-if="showBook">Hide</span>
+    </button>
+
+    <br><br>
+
+    <div class="box" @mouseover="mouseOverHandler" >Mouse Over</div>
+
+    <div class="box" @mouseleave="mouseLeaveHandler($event,'data')" >Mouse Leave</div>
+
+    <div class="box" @dblclick="doubleClickHandler" >Double Click</div>
+
+    <div v-if="showBook">
+        <ul v-for="book in filterBooks">
+            <!-- <li :class="{favourite:book.isFavourite}" @click="book.isFavourite =! book.isFavourite"> -->
+            <li :class="{favourite:book.isFavourite}" @click="favouriteHandler(book)">
+                <img :src="book.img" alt="" width="300px" height="200px">
+                <p>Book Name : {{book.name}}</p>
+                <p>Book Type : {{book.type}}</p>
+                <p>Book Brand : {{book.brand}}</p>
+                <hr>
+            </li>
+        </ul>
+    </div>
+    <a v-bind:href="link">To google</a><br><br>
+    <button @click="showBook= !showBook">
+        <span v-if="!showBook">Show</span>
+        <span v-if="showBook">Hide</span>
+    </button>
+
+
+
+
+
+
+
+
+</body>
+<script src="app.js"></script>
+
+</html>
