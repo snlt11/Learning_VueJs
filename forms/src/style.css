@@ -32,8 +32,8 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  font-size: 2.2em;
+  line-height: 1;
 }
 
 button {
@@ -119,4 +119,25 @@ input[type="checkbox"] {
   margin: 0 10px 0 0;
   position: relative;
   top: 2xp
+}
+
+.cross {
+  cursor: pointer;
+  color: red;
+}
+
+.create {
+  background: royalblue;
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+}
+
+.align {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.error {
+  color: red;
 }
