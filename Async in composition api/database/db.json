@@ -1,0 +1,33 @@
+{
+  "posts": [
+    {
+      "title": "Post title 1",
+      "body": "Post body 1",
+      "id": "1"
+    },
+    {
+      "title": "Post title 2",
+      "body": "Post body 2",
+      "id": "2"
+    },
+    {
+      "title": "Post title 3",
+      "body": "Post body 3",
+      "id": "3"
+    },
+    {
+      "title": "Post title 4",
+      "body": "Post body 4",
+      "id": "4"
+    },
+    {
+      "id": "75fc",
+      "title": "one",
+      "body": "one ",
+      "tags": [
+        "one",
+        "two"
+      ]
+    }
+  ]
+}
