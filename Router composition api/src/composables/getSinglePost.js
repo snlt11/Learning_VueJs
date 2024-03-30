@@ -4,7 +4,7 @@ let getSinglePost = (id) => {
   let post = ref(null);
   let error = ref("");
   let load = async () => {
-    try {
+    try { 
       // await new Promise((resolve, reject) => {
       //   setTimeout(resolve, 2000);
       // });

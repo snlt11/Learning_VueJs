@@ -1,17 +1,15 @@
 <template>
-  <!-- <Navbar></Navbar> -->
+  <Navbar></Navbar>
   <RouterView />
 </template>
 
 <script>
+import Navbar from "./components/Navbar.vue";
 import { RouterLink, RouterView } from "vue-router";
-// import Navbar from "./components/Navbar.vue";
-
 export default {
-  // components: { Navbar },
+  components: { Navbar },
 };
 </script>
-
 <style>
 header {
   display: flex;
@@ -19,6 +17,6 @@ header {
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 10px;
+  padding: 20px;
 }
 </style>
